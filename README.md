@@ -66,4 +66,4 @@ r_t = +0.01   per step survived
 python -m pytest tests/ -v
 ```
 
-See `INSTRUCTION_en.md` for full setup and calibration guide.
+See `INSTRUCTION.md` for full setup and calibration guide.
