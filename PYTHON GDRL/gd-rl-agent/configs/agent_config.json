@@ -1,0 +1,44 @@
+{
+  "capture_region": {
+    "left": 418,
+    "top": 30,
+    "width": 1117,
+    "height": 628
+  },
+  "player": {
+    "player_right_x": 650,
+    "ground_y": 568,
+    "grounded_check_y": 503,
+    "guard_px": 12,
+    "scan_depth": 300,
+    "cube_height_px": 65
+  },
+  "reward": {
+    "r_step": 0.01,
+    "r_death": -1.0,
+    "r_completion": 5.0,
+    "penalize_useless_jumps": true,
+    "useless_jump_threshold": 0.35,
+    "useless_jump_penalty": -0.02,
+    "gamma": 0.99
+  },
+  "episode": {
+    "max_episode_steps": 250,
+    "calibration_fps": 10.0
+  },
+  "hp": {
+    "lr": 0.001,
+    "batch_size": 32,
+    "replay_capacity": 10000,
+    "target_update_freq": 200,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay_steps": 5000,
+    "hidden_dim": 128,
+    "use_double_dqn": false,
+    "use_dueling_dqn": false,
+    "use_obstacle_lookahead": false
+  },
+  "log_dir": "runs",
+  "config_path": "configs\\agent_config.json"
+}
